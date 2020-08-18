@@ -1,0 +1,126 @@
+@CHARSET "UTF-8";
+body
+{
+	margin:0;/*外边距*/
+	padding:0;/*内边距*/
+	font-family:sans-serif;/*设置字体*/
+	background:url(images/a0.jpg);/*背景图片*/
+	background-size:cover;/*背景尺寸*/
+}
+.box  /* id用# class用. */
+{
+	position:absolute;/*绝对定位元素*/
+	top:15%;/*规定元素的顶部边缘*/
+	left:33%;/*规定元素的左边缘*/
+	transform:tranlate(-50%,-50%);/*往上（x轴）,左（y轴）移动自身长宽的 50%，以使其居于中心位置。*/
+	width:400px;/*定义元素内容区的宽度*/
+	padding:40px;
+	background:rgba(255,192,203,.8);/*对颜色值设置透明度*/
+	box-sizing:border-box;/*令浏览器呈现出带有指定宽度和高度的框，并把边框和内边距放入框中。*/
+	box-shadow:0 15px 25px rgba(0,0,0,.5);/*向框添加一个或多个阴影*/
+	border-radius:10px;/*添加圆角边框*/
+}
+.box h2
+{
+	margin:0 0 30px;/*margin: 上 右 下 左。*/
+	padding:0;
+	color:#fff;/*白色*/
+	text-align:center;/*文本居中*/
+}
+.box .inputBox
+{
+	position:relative;
+}
+.box .inputBox input
+{
+	width:100%;
+	padding:10px 0;
+	font-size:15px;
+	color:#fff;
+	letter-spacing:3px;/*字符间距*/
+	margin-bottom:30px;/*下外边距*/
+	/*border:none;*//*取消边框*/
+	border-bottom: 1px solid #fff;/*底部边框*/
+	/*outline:none;*/
+	background:transparent;/*背景透明*/
+}
+
+
+.box .inputBox label
+{
+	position:absolute;
+	top:0;
+	left:7px;
+	letter-spacing:1px;
+	padding:10px 0;
+	font-size:16px;
+	color:#fff;
+	pointer-events:none;/*阻止成为鼠标目标*/
+	transition:.5s;/*过渡时间*/
+}
+.box .inputBox input:focus~label,
+.box .inputBox input:valid~label/*label过度*/
+{
+	top:-30px;
+	left:0;
+	color:#03a9f4;
+	font-size:10px;
+}
+
+.box input[type="submit"]
+{
+	background:transparent;
+	border:none;
+	outline:none;
+	color:#fff;
+	background:#03a9f4;
+	padding:10px 45px;
+	cursor:pointer;
+	border-radius:5px;
+	margin:10px;
+	
+}
+
+.box input[type="button"]
+{
+	background:transparent;/*背景：全透明*/
+	border:none;           /*边框样式*/
+	outline:none;                
+	color:#fff;            
+	background:#03a9f4;
+	padding:10px 45px;     /*按钮大小*/
+	cursor:pointer;        /*光标样式*/
+	border-radius:5px;     /*边框圆角*/
+	margin:10px;
+}
+.box img
+{
+       align:center;
+	margin:10px;
+}
+#topdao{
+	float: right;
+	z-index:1;/*z-index表示层叠数值,数越大越上,越小越下*/
+	position: relative;
+}
+
+/*#dltop{
+	height: 0px;
+	background:rgba(255,200,100,.9);/*对颜色值设置透明度*/
+	/*margin-bottom:5px;
+}*/
+/*#logo{
+	z-index:999;
+}*/
+#dltop li{
+	float: left;
+	margin: 0px 30px;
+	line-height: 1px;/*行高*/
+}
+#dltop li a{
+	color: #03a9f4;
+	font-weight: bold;
+}
+#dltop li a:hover{
+	color: #00925F;
+}

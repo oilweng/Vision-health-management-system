@@ -1,0 +1,95 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body { 
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size:10px; 
+	background:url(images/tg.jpg);/*背景图片*/
+}
+
+#container {
+	margin:0 auto; 
+	width:900px; 
+}
+/*#header { 
+	height:100px;
+	background:rgba(243,255,226,.8);/*对颜色值设置透明度*/
+	/*margin-bottom:5px;*/
+/*}*/
+#main{ 
+	font-size:10px;
+	height:600px;
+	/*background:#97e690;*/ 
+	background:rgba(243,255,226,.8);/*对颜色值设置透明度*/
+	margin-bottom:5px;
+}
+#footer { 
+	height:40px; 
+	background:rgba(255,200,100,.9);/*对颜色值设置透明度*/
+}
+.person
+{
+	position:absolute;/*绝对定位元素*/
+	top:13%;/*规定元素的顶部边缘*/
+	left:20%;/*规定元素的左边缘*/
+	transform:tranlate(-50%,-50%);/*往上（x轴）,左（y轴）移动自身长宽的 50%，以使其居于中心位置。*/
+	width:1120px;/*定义元素内容区的宽度*/
+	padding:40px;
+}
+p{
+	margin-top: 20px;
+	font-size:20px;
+}
+p span{
+	width: 75px;
+	display: inline-block;/*将行内元素转换为行内块元素*/
+	text-align: right;/*居右对齐*/
+	padding-right: 5px;
+}
+p input{
+	/*设置所有的输入框样式*/
+	width: 200px;
+	height: 18px;
+	font-size:20px;
+	font-family: DFKai-SB;
+	/*border: 1px solid #38a1bf;*/
+	margin-bottom:15px;/*下外边距*/
+	border:none;/*取消边框
+	border-bottom: 1px solid #fff;/*底部边框*/
+	outline:none;
+	background:transparent;/*背景透明*/
+	padding:15px;
+	/*设置输入框与输入内容之间拉开一些距离*/
+}
+
+#daohang{
+	float: right;
+	z-index:1;
+	position: relative;
+}
+
+#header{
+	height: 90px;
+	background:rgba(255,200,100,.9);/*对颜色值设置透明度*/
+	margin-bottom:5px;
+}
+/*#logo{
+	z-index:999;
+}*/
+#header li{
+	float: left;
+	margin: 0px 15px;
+	line-height: 5px;
+}
+#header li a{
+	color: #666666;
+	font-weight: bold;
+}
+#header li a:hover{
+	color: #00925F;
+}
+
+#qq{
+	color: #00925F;
+}
