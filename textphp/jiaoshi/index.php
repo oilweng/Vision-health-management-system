@@ -5,7 +5,7 @@
 </head>
 <script>
 	function doDel(UID){
-		if (confirm("确定要删除吗？")) {
+		if (confirm("确定要删除吗？？")) {
 			window.location='action.php?action=del&UID='+UID;
 		}
 		
